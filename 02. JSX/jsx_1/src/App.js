@@ -14,9 +14,14 @@ const app_style = {
 // #2. 함수 선언 부분
 function App() {
 	return (
+		<>
 		<div className="App" style={app_style}>
 			{name}님, 환영합니다!
 		</div>
+		<div className="reverseStyle">
+		이 페이지는 테스트 페이지입니다.
+		</div>
+		</>
 	);
 }
 
