@@ -1,5 +1,6 @@
 import './App.css';
 import Components from './Components';
+import Counter from './Counter';
 //import {Component} from 'react';
 
 
@@ -38,7 +39,12 @@ const App = () => {
 
 // #4. children
 const App = () => {
-  return <Components name="악동분홍토끼">깡총!</Components>;
+  return (
+    <>
+    <Components name="악동분홍토끼" favorite_number={7}>깡총!</Components>
+    <Counter />
+    </>
+  );
 };
 
 export default App;
