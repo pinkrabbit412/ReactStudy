@@ -1,5 +1,7 @@
 import { Component } from "react";
 
+
+
 class Counter extends Component {
   /*
     constructor(props) {
@@ -11,12 +13,15 @@ class Counter extends Component {
         };
     }
     */
+
   state = {
     count: 0,
     fixed_count: 7
   };
   when_click() {
-    this.setState( {count: this.count + 1} );
+    //학습에 참고한 자료 URL: https://ko.reactjs.org/docs/faq-state.html
+    console.log("when_click()이 호출되었습니다.");
+    this.setState( (state) => { return {count: state.count + 1} });
   }
   render() {
     const { count, fixed_count } = this.state;
@@ -33,7 +38,7 @@ class Counter extends Component {
           }}
         >
         */}
-        <button onclick={ () => {this.when_click()} }>
+        <button onClick={ this.when_click.bind(this) }>
           <p style={{ fontWeight: "bold" }}>+ 1</p>
         </button>
       </>
