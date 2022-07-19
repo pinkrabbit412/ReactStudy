@@ -1,0 +1,24 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+  margin: 0;
+  padding: 3.5rem;
+  font-family: Pretendard, "Apple SD Gothic Neo", "나눔바른고딕", "나눔고딕", "NanumGothic", "맑은고딕", "Malgun Gothic", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: aliceblue;
+  background-color: #252830;
+  font-size: 1.5rem;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.success {
+  background-color: lightgreen;
+}
+.fail {
+  background-color: lightcoral;
+}
