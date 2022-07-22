@@ -10,6 +10,10 @@ body {
   background-color: #252830;
   font-size: 1.5rem;
 }
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

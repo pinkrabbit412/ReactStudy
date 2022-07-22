@@ -14,6 +14,7 @@ class Validation extends Component {
       clicked: true,
       validated: this.state.access_code === "0412",
     });
+    this.input.focus();
   };
   render() {
     return (
@@ -21,6 +22,7 @@ class Validation extends Component {
         액세스 코드를 입력하십시오.
         <br />
         <input
+          ref={(ref) => this.input=ref}
           type={"password"}
           value={this.state.access_code}
           onChange={this.whenValueChanged}
