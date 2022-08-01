@@ -1,0 +1,16 @@
+$akdong_pink: #FCACD3;
+$akdong_deep_pink: #F962AC;
+$red: red;
+$orange: orange;
+$yellow: yellow;
+$green: green;
+$blue: blue;
+$indigo: indigo;
+$purple: purple;
+
+@mixin square($size) {
+    $calculated_size: 32px * $size;
+    width: $calculated_size;
+    height: $calculated_size;
+    line-height: $calculated_size;
+}

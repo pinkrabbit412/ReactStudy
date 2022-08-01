@@ -1,0 +1,59 @@
+@import "./styles/utils.scss";
+
+@import "~include-media/dist/include-media";
+@import "~open-color/open-color";
+
+.componentWrapper {
+    background: $oc-gray-2;
+    @include media("<1000px") {
+        background: #252830;
+    }
+}
+
+.sassComponent {
+    display: flex;
+    .box {
+        transition: all 0.3s ease-in;
+        overflow: hidden;
+
+        &.red {
+            color: $red;
+            background: $red;
+            @include square(1);
+        }
+        &.orange {
+            color: $orange;
+            background: $orange;
+            @include square(2);
+        }
+        &.yellow {
+            color: $yellow;
+            background: $yellow;
+            @include square(3);
+        }
+        &.green {
+            color: $green;
+            background: $green;
+            @include square(4);
+        }
+        &.blue {
+            color: $blue;
+            background: $blue;
+            @include square(5);
+        }
+        &.indigo {
+            color: $indigo;
+            background: $indigo;
+            @include square(6);
+        }
+        &.purple {
+            color: $purple;
+            background: $purple;
+            @include square(7);
+        }
+        &:hover {
+            color: white;
+            background: black;
+        }
+    }
+}
