@@ -6,7 +6,8 @@ body {
   font-family: Pretendard, "Apple SD Gothic Neo", "나눔바른고딕", "나눔고딕", "NanumGothic", "맑은고딕", "Malgun Gothic", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #252830;
+  background-color: #999999;
+  padding: 2rem;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
