@@ -1,0 +1,50 @@
+.TodoListItem {
+    display: flex;
+    padding: 1rem;
+    &:nth-child(even) {
+        background-color: #ffecf5;
+    }
+    .checkBox {
+        // 체크박스 아이콘입니다.
+        cursor: pointer;
+        display: flex;
+        flex: 1;
+        align-items: center;
+        svg {
+            // 아이콘의 크기를 지정합니다.
+            font-size: 1.5rem;
+        }
+        .text {
+            // 할 일 내용입니다.
+            margin-left: 1rem;
+            display: flex;
+            flex: 1;
+        }
+        &.isTodoChecked {
+            // 체크박스가 체크된 경우, checkBox와 text의 스타일을 아래와 같이 바꿉니다.
+            svg {
+                color: #bbbbbb;
+            }
+            .text {
+                color: #bbbbbb;
+                text-decoration: line-through;
+            }
+        }
+    }
+    .removeTodo {
+        // 할 일 제거 아이콘입니다.
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: coral;
+        cursor: pointer;
+        &:hover {
+            color: red;
+        }
+    }
+
+    & + & {
+        // 요소 사이사이에 테두리를 넣어 줍니다.
+        border-top: 1px solid #FCACD3;
+    }
+}
