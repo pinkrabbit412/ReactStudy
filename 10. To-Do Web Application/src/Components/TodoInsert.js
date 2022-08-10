@@ -16,7 +16,6 @@ const TodoInsert = ( {whenTodoInserted} ) => {
 			whenTodoInserted(value);
 			setValue("");
 			event.preventDefault();
-			console.log("웹페이지 새로고침을 방지했습니다.");
 		},
 		[whenTodoInserted, value]
 	);
