@@ -9,7 +9,7 @@ This repository uses Korean for main.
 
 ## References...
 ```JavaScript
-import 'Book.gilbut.TheArtOfReact';
+import { ReactStudy } from 'Book-gilbut-TheArtOfReact';
 ```
 ![Book.gilbut.TheArtOfReact](https://gimg.gilbut.co.kr/book/BN002496/rn_view_BN002496.jpg)
 
