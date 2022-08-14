@@ -1,0 +1,18 @@
+.TodoTemplateWrapper {
+	border: 5px solid #F962AC;
+	border-radius: 5px;
+	
+	.appTitle {
+		text-align: center;
+		font-size: 2.25rem;
+		font-weight: bold;
+		padding: 2rem;
+		background-color: #fcacd3;
+	}
+	.contents {
+        font-size: 1.15rem;
+		background-color: white;
+		border: 1px solid #cccccc;
+
+	}
+}

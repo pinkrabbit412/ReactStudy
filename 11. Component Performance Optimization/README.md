@@ -1,3 +1,11 @@
+# Result Preview
+![Result Image](https://github.com/pinkrabbit412/ReactStudy/blob/main/10.%20To-Do%20Web%20Application/result.png?raw=true)
+<p align="center">[Image #1] Chapter #10 - Sample result page</p>
+
+<br />
+<hr />
+<br />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

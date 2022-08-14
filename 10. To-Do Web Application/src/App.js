@@ -25,7 +25,7 @@ const App = () => {
 		},
 	]);
 
-	const next_id = useRef(4);
+	const next_index = useRef(4);
 
 	const whenTodoCheckboxClicked = useCallback(
 		(target_index) => {
@@ -43,12 +43,12 @@ const App = () => {
 	const whenTodoInserted = useCallback(
 		(text) => {
 			const todo = {
-				index: next_id.current,
+				index: next_index.current,
 				text,
 				isTodoChecked: false,
 			};
 			setTodoData(todo_data.concat(todo));
-			next_id.current++;
+			next_index.current++;
 		},
 		[todo_data]
 	);
