@@ -11,22 +11,25 @@ const TodoListItem = ({
 	todo,
 	whenTodoRemoveButtonClicked,
 	whenTodoCheckboxClicked,
+	style
 }) => {
 	const { index, text, isTodoChecked } = todo;
 	return (
-		<div className="TodoListItem">
-			<div
-				className={cn("checkBox", { isTodoChecked })}
-				onClick={() => whenTodoCheckboxClicked(index)}
-			>
-				{isTodoChecked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
-				<div className="text">{text}</div>
-			</div>
-			<div
-				className="removeTodo"
-				onClick={() => whenTodoRemoveButtonClicked(index)}
-			>
-				<MdRemoveCircleOutline />
+		<div className="TodoListItem-Virtualized" style={style}>
+			<div className="TodoListItem">
+				<div
+					className={cn("checkBox", { isTodoChecked })}
+					onClick={() => whenTodoCheckboxClicked(index)}
+				>
+					{isTodoChecked ? <MdCheckBox /> : <MdCheckBoxOutlineBlank />}
+					<div className="text">{text}</div>
+				</div>
+				<div
+					className="removeTodo"
+					onClick={() => whenTodoRemoveButtonClicked(index)}
+				>
+					<MdRemoveCircleOutline />
+				</div>
 			</div>
 		</div>
 	);

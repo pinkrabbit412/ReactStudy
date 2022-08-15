@@ -1,10 +1,6 @@
-# Result Preview
-![Result Image](https://github.com/pinkrabbit412/ReactStudy/blob/main/10.%20To-Do%20Web%20Application/result.png?raw=true)
-<p align="center">[Image #1] Chapter #10 - Sample result page</p>
-
-<br />
-<hr />
-<br />
+# Added Packages
+**classnames** : `yarn add classnames`
+**react-virtualized** : `yarn add react-virtualized`
 
 # Getting Started with Create React App
 
