@@ -38,8 +38,8 @@ const TodoList = ({ todo_data, whenTodoRemoveButtonClicked, whenTodoCheckboxClic
 	return(
 		<List
 			className="TodoList"
-			width={593}
-			height={1080}
+			width={1024}
+			height={1024}
 			rowCount={todo_data.length}
 			rowHeight={57}
 			rowRenderer={rowRenderer}
