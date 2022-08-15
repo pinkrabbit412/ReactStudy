@@ -1,7 +1,12 @@
 .TodoListItem {
     display: flex;
     padding: 1rem;
+    /*
     &:nth-child(even) {
+        background-color: #ffecf5;
+    }
+    */
+    &.pink {
         background-color: #ffecf5;
     }
     .checkBox {

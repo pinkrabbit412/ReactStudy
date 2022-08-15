@@ -16,7 +16,7 @@ const TodoListItem = ({
 	const { index, text, isTodoChecked } = todo;
 	return (
 		<div className="TodoListItem-Virtualized" style={style}>
-			<div className="TodoListItem">
+			<div className={ cn( "TodoListItem", { pink: !(index % 2) } ) }>
 				<div
 					className={cn("checkBox", { isTodoChecked })}
 					onClick={() => whenTodoCheckboxClicked(index)}
